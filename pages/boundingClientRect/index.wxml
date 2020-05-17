@@ -1,0 +1,9 @@
+<!--pages/boundingClientRect/index.wxml-->
+<view class="index" id="boundingClientRect">
+  <block>
+    <text class="title" id="txt_node">SelectorQuery NodesRef.boundingClientRect(function callback)</text>
+    <button style="width:100%;margin-top:35px;" class="link" bind:tap="nextRouter">
+      认识SelectorQuery.selectViewport()
+    </button>
+  </block>
+</view>

@@ -1,0 +1,10 @@
+/* pages/home/index.wxss */
+.home{
+
+}
+.navigator{
+  color:red;
+  font-size:larger;
+  font-weight:800;
+  line-height: 45px;
+}

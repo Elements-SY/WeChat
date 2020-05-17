@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/movable-area/index",
+    "pages/home/index",
+    "pages/boundingClientRect/index",
+    "pages/selectViewport/index",
+    "pages/exec/index",
+    "pages/eventChannel/index",
+    "pages/getOptions/index",
+    "pages/scroll-view/index"   
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "backgroundColorTop": "#FFF5EE",
+    "backgroundColorBottom": "#00FA9A"
+  },
+  "tabBar": {
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/eventChannel/index",
+        "text": "跳转传参"
+      },
+      {
+        "pagePath": "pages/boundingClientRect/index",
+        "text": "节点查询/信息获取"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wx5aa1501192480966"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

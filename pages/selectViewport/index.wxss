@@ -1,0 +1,13 @@
+/* pages/selectViewport/index.wxss */
+#selectViewport{
+  width: 200px;
+  height: 180px;
+  overflow: auto;
+  background-color:#F1E1F5;
+}
+.child{
+  width: 300px;
+  height: 120px;
+  background:green;
+  color: white;
+}

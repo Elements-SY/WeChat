@@ -1,0 +1,5 @@
+<!--pages/getOptions/index.wxml-->
+<view class="get_options">
+  <text>{{title}}</text>
+</view>
+

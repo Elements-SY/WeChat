@@ -1,0 +1,58 @@
+<!--pages/scroll-view/index.wxml-->
+<view class="scroll_view">
+
+<!-- 
+    scroll-view组件之scroll-x=""属性概述：
+
+    凡是定义在scroll-view组件内的区块，如果宽或者高大于scroll-view的宽或者高，那么
+    scroll-view组件的scroll-x="true"属性值就会生效，倘若定义在scroll-view组件内的区块，
+    如果宽或者高没有一个区块大于scroll-view的宽或者高，那么scroll-view组件的scroll-x="true"
+    属性值就不会生效。
+    我们可以测试一下，将scroll-view组件内的子元素的宽设置小于当前设备的宽，假设当前设备是375，
+    那么我们就将scroll-view组件内的子元素的宽设置小于375，
+    通过控制台我们审查scroll-view组件发现它的宽按当前设备的宽默认设置。
+    这也就说，scroll-view组件内的块级元素必须要有一个子元素的宽大于当前设备的宽，这样scroll-view组件滚动才会生效。
+
+    scroll-view组件之scroll-left=""属性概述：
+
+    如前所述scroll-view组件内的块级元素的宽或者高超出scroll-view的宽或者高时，scroll-view组件滚动才会生效。
+    但是还需要设置属性值scroll-x="true"才会生效，那么scroll-left=""属性有啥用处？
+    我们想一下，如果我们在一个父元素内定义的子元素的内容过多是不是会出现两种情况，
+    一种是换行展示，一种不换行展示，不管哪种情况是不是都会当内容过多都会发生溢出？
+    但是如果我们给父盒子添加一个overflow译为“覆盖流动”则避免了内容溢出情况，当然不能设置overflow: hidden,
+    而是要设置overflow: scroll-x/y/auto；这样我们就可以通过滚动条来滚动查看覆盖流动的部分内容。
+    那么scroll-left=""属性就是用来设置控制这个滚动偏移量的。
+    既然要探索一下scroll-left=""属性那么scroll-view组件内块级元素的宽或者高当然要大于当前设备的宽或者高了，
+    这样才能保证可以滚动，那么我们才能通过scroll-left=""属性设置这个滚动的偏移量啦。
+    我们在375设备下来测一下，设置scroll-view组件内块级元素的宽为475，也就是说已经超出100像素了，
+    我们设置scroll-left="40"然后在微信开发者工具下通过截图查看是不是超出100，设置scroll-left="40"
+    是不是偏移了40个像素。
+
+    scroll-x 可以控制横向运动的方向，如果纵向超出屏幕的高度，相应的纵向也可以滚动
+    scroll-y 可以控制纵向运动的方向，如果横向宽度超出屏幕的宽度，将不能进行横向滚动
+    scroll-y 无论是false、true时都没有达到我们想要的竖向滚动条位置的期望
+    scroll-left 加上 scroll-x="true" 就可以达到我们想要的横向滚动条的位置 
+-->
+ 
+<scroll-view scroll-x="true" scroll-left="40">
+  <view style="height:200px; width:475px; background-color:red;">
+    <text>scroll-view 1</text>
+  </view>
+  <view style="height:200px; background-color:green;">
+    <text>scroll-view 2</text>
+  </view>
+</scroll-view>
+ 
+<!-- 
+   scroll-into-view 属性经测试没有达到我们想要的id那个块级元素中
+   scroll-with-animation 属性看不出来效果
+-->
+
+<!-- 
+<scroll-view scroll-into-view="blacks" scroll-with-animation="true">  
+  <view style="height:200px; width:500px; background-color:red;"></view>
+  <view style="height:200px; background-color:green;" id="green"></view>
+</scroll-view> 
+-->
+
+</view>

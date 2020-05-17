@@ -1,0 +1,9 @@
+/* pages/getOptions/index.wxss */
+.get_options{
+  text-align: center;
+}
+text{
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 18px;
+}

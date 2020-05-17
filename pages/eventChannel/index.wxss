@@ -1,0 +1,7 @@
+/* pages/eventChannel/index.wxss */
+
+.event_channel navigator{
+  color: red;
+  font-size: larger;
+  line-height: 45px;
+}

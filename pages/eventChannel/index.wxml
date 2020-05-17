@@ -1,0 +1,7 @@
+<!--pages/eventChannel/index.wxml-->
+<view class="event_channel">
+   <block>
+    <navigator url="/pages/getOptions/index?title=navigate" hover-class="navigator-hover">通过URL跳转传参</navigator>
+    <navigator url="/pages/getOptions/index" hover-class="other-navigator-hover" bind:tap="nextRouter">通过事件注册传参监听事件</navigator>
+  </block>
+</view>

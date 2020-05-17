@@ -1,0 +1,6 @@
+<!--pages/home/index.wxml-->
+<view class="home">
+  <block>
+    <navigator class="navigator" url="/pages/scroll-view/index" hover-class="navigator-hover">scroll-view组件的使用</navigator>
+  </block>
+</view>
